@@ -1,0 +1,88 @@
+[debug] [2024-03-16T10:43:49.768Z] ----------------------------------------------------------------------
+[debug] [2024-03-16T10:43:49.770Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Akmal Maulana Basri\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-03-16T10:43:49.770Z] CLI Version:   13.5.1
+[debug] [2024-03-16T10:43:49.771Z] Platform:      win32
+[debug] [2024-03-16T10:43:49.771Z] Node Version:  v20.10.0
+[debug] [2024-03-16T10:43:49.771Z] Time:          Sat Mar 16 2024 17:43:49 GMT+0700 (Indochina Time)
+[debug] [2024-03-16T10:43:49.771Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-16T10:43:49.835Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-16T10:43:49.835Z] > authorizing via signed-in user (jakarta@konneckin.com)
+[debug] [2024-03-16T10:43:49.835Z] [iam] checking project konneckin-newsapi for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-16T10:43:49.837Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/konneckin-newsapi:testIamPermissions [none]
+[debug] [2024-03-16T10:43:49.837Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/konneckin-newsapi:testIamPermissions x-goog-quota-user=projects/konneckin-newsapi
+[debug] [2024-03-16T10:43:49.837Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/konneckin-newsapi:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-16T10:43:51.057Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/konneckin-newsapi:testIamPermissions 200
+[debug] [2024-03-16T10:43:51.057Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/konneckin-newsapi:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-16T10:43:51.058Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/konneckin-newsapi [none]
+[debug] [2024-03-16T10:43:51.678Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/konneckin-newsapi 200
+[debug] [2024-03-16T10:43:51.679Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/konneckin-newsapi {"projectId":"konneckin-newsapi","projectNumber":"1017627587867","displayName":"Konneckin NewsAPI","name":"projects/konneckin-newsapi","resources":{"hostingSite":"konneckin-newsapi","storageBucket":"konneckin-newsapi.appspot.com","locationId":"asia-southeast2"},"state":"ACTIVE","etag":"1_54ff6cd4-ed81-44d8-a563-1673b9db6c8e"}
+[debug] [2024-03-16T10:43:54.924Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/konneckin-newsapi/sites pageToken=&pageSize=10
+[debug] [2024-03-16T10:43:55.765Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/konneckin-newsapi/sites 200
+[debug] [2024-03-16T10:43:55.765Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/konneckin-newsapi/sites {"sites":[{"name":"projects/konneckin-newsapi/sites/konneckin-newsapi","defaultUrl":"https://konneckin-newsapi.web.app","appId":"1:1017627587867:web:6328d482c28264336b0fbe","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-16T10:43:55.765Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1017627587867:web:6328d482c28264336b0fbe/config [none]
+[debug] [2024-03-16T10:43:57.025Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1017627587867:web:6328d482c28264336b0fbe/config 200
+[debug] [2024-03-16T10:43:57.025Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1017627587867:web:6328d482c28264336b0fbe/config {"projectId":"konneckin-newsapi","appId":"1:1017627587867:web:6328d482c28264336b0fbe","storageBucket":"konneckin-newsapi.appspot.com","locationId":"asia-southeast2","apiKey":"AIzaSyBvCYgL-V5NVTr4sDtLBRFpoM6AC8aI3YM","authDomain":"konneckin-newsapi.firebaseapp.com","messagingSenderId":"1017627587867","measurementId":"G-MNSXHE8EBJ"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-03-16T10:44:05.985Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/konneckin-newsapi/sites/konneckin-newsapi [none]
+[debug] [2024-03-16T10:44:06.674Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/konneckin-newsapi/sites/konneckin-newsapi 200
+[debug] [2024-03-16T10:44:06.674Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/konneckin-newsapi/sites/konneckin-newsapi {"name":"projects/konneckin-newsapi/sites/konneckin-newsapi","defaultUrl":"https://konneckin-newsapi.web.app","appId":"1:1017627587867:web:6328d482c28264336b0fbe","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.3
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] 
+
+[info] 🌼   daisyUI 4.7.2
+
+[info] ├─ ✔︎ 2 themes added		https://daisyui.com/docs/themes
+
+[info] ╰─ ★ Star daisyUI on GitHub	https://github.com/saadeghi/daisyui
+
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info]    Collecting page data ...
+
+[info] FirebaseError: Firebase: No Firebase App '[object Object]' has been created - call initializeApp() first (app/no-app).
+    at getApp (file:///D:/Project/konneckin/node_modules/@firebase/app/dist/esm/index.esm2017.js:479:29)
+    at D:\Project\konneckin\.next\server\pages\firebase\storage.js:1:2599 {
+  code: 'app/no-app',
+  customData: {
+    appName: FirebaseAppImpl {
+      _isDeleted: false,
+      _options: [Object],
+      _config: [Object],
+      _name: '[DEFAULT]',
+      _automaticDataCollectionEnabled: false,
+      _container: [ComponentContainer]
+    }
+  }
+}
+
+[info] 
+
+[info] > Build error occurred
+
+[info] Error: Failed to collect page data for /firebase/storage
+    at D:\Project\konneckin\node_modules\next\dist\build\utils.js:1258:15 {
+  type: 'Error'
+}
+
+[debug] [2024-03-16T10:44:21.728Z] Error: ENOENT: no such file or directory, open 'D:\Project\konneckin\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.

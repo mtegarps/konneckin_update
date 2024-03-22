@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: 'Exo 2', sans-serif;
+}
+
+.font-outline-2 {
+  color: #fefefe;
+  mix-blend-mode: difference;
+}
+
+.ml9 {
+  position: relative;
+  font-weight: 200;
+}
+
+.ml9 .text-wrapper {
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  display: inline-block;
+  line-height: 1em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
